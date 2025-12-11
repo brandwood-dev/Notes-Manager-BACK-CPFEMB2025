@@ -1,0 +1,132 @@
+/* 🔥 Global dark neon theme */
+body {
+  background: #0a0a0f;
+  color: #e6e6e6;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.notes-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00eaff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00eaff;
+}
+
+/* Input panel */
+.add-note {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+  margin-bottom: 30px;
+}
+
+.add-note input,
+.add-note textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  background: #11121a;
+  border: 1px solid #1f2029;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.add-note input:focus,
+.add-note textarea:focus {
+  border-color: #00eaff;
+  box-shadow: 0 0 8px #00eaff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.add-btn {
+  background: #00eaff;
+  color: #0a0a0f;
+  text-shadow: 0 0 8px white;
+  box-shadow: 0 0 15px #00eaff;
+}
+
+.add-btn:hover {
+  background: #04bcd4;
+  box-shadow: 0 0 20px #00eaff;
+}
+
+.delete-btn {
+  background: #ff004c;
+  color: white;
+  box-shadow: 0 0 12px #ff004c;
+}
+
+.delete-btn:hover {
+  background: #d70040;
+}
+
+/* Notes grid */
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Note card */
+.note-card {
+  background: #11121a;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #1f2029;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.07);
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.note-card h3 {
+  color: #00eaff;
+  text-shadow: 0 0 8px #00eaff;
+}
+
+.note-card p {
+  opacity: 0.9;
+}
+
+/* Edit form */
+.note-card input,
+.note-card textarea {
+  background: #0d0d12;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
